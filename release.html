@@ -224,5 +224,16 @@
 </tr>
 </table>
 
+<!-- Pause any other track when a new one starts -->
+<script>
+    document.querySelectorAll('audio').forEach(function (player) {
+        player.addEventListener('play', function () {
+            document.querySelectorAll('audio').forEach(function (other) {
+                if (other !== player) other.pause();
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
