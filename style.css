@@ -65,6 +65,11 @@ hr {
     border-top: 1px solid #999;
 }
 
+/* Layout table — keep 750px on desktop, shrink to fit on phones */
+table {
+    max-width: 100%;
+}
+
 /* Images */
 img {
     max-width: 100%;
