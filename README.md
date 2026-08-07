@@ -4,13 +4,10 @@
 
 ```
 site/
-├── index.html      ← Main page (project info, news)
-├── release.html    ← Album page (tracklist, audio players, downloads)
-├── links.html      ← Links, credits, contact
+├── index.html      ← The whole site (info, photo, album, tracklist)
+├── release.html    ← Just redirects to index.html (old links)
 ├── style.css       ← All the styling (one file, easy to tweak)
-├── images/         ← Put your photos here
-│   ├── project-photo.jpg
-│   └── album-cover.jpg
+├── photo.jpeg      ← The photo
 └── audio/          ← Put your music files here
     ├── 01-track-title.mp3   (for streaming on the page)
     ├── 01-track-title.wav   (for downloads)
