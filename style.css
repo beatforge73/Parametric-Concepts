@@ -137,4 +137,16 @@ a.download:hover {
     h1 {
         font-size: 22px;
     }
+    /* Auto table layout keeps the table at least as wide as its widest
+       content (the photo, the audio players), so max-width:100% never
+       kicks in. Fixed layout ignores content widths, letting the table
+       fit the phone screen instead of overflowing sideways. */
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+    /* Long words/URLs wrap instead of pushing the column open */
+    td {
+        overflow-wrap: break-word;
+    }
 }
